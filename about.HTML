@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>RedPanda University</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <script src="https://kit.fontawesome.com/5bc4c59dfd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="script.js">
+  </head>
+  <body>
+       <section class="sub-header">
+         <nav>
+           <a href="index.html"><img src="images\REDPANDA Logo.png" alt="Logo"></a>
+           <div class="nav-links" id="navlinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+             <ul>
+               <li><a href="INDEX.HTML">HOME</a></li>
+               <li><a href="about.HTML">ABOUT</a></li>
+               <li><a href="course.HTML">COURSE</a></li>
+               <li><a href="blog.HTML">BLOG</a></li>
+               <li><a href="contact.HTML">CONTACT</a></li>
+             </ul>
+           </div>
+           <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+         </nav>
+         <h1>About Us</h1>
+       </section>
+<!-- -----------------about us content---- -->
+      <section class="about-us">
+        <div class="row">
+          <div class="about-col">
+            <h1>The RedPanda University.</h1>
+            <p>REDPANDA inc. has come together and brought academia close to you.
+            <br>We are aimed and focused in educating the whole person body, mind and
+          soul.</p>
+          <a href="#" class="hero-btn red-btn">EXPLORE NOW</a>
+          </div>
+          <div class="about-col">
+              <img src="images/about.jpg" alt="">
+          </div>
+        </div>
+      </section>
+       <!-- ------------Footer--------- -->
+       <section class="footer">
+         <h4>About Us</h4>
+         <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>
+            sed do eiusmod tempor incididunt ut labore et dolore
+         </p>
+         <div class="icons">
+           <i class="fab fa-facebook-f"></i>
+           <i class="fab fa-instagram"></i>
+           <i class="fab fa-twitter"></i>
+           <i class="fab fa-linkedin-in"></i>
+         </div>
+         <p>MADE BY REDPANDA inc <i class="fas fa-copyright"></i></p>
+       </section>
+       <!-- -----------script- -->
+       <script>
+       var navlinks = document.getElementById("navlinks");
+       function showMenu(){
+         navlinks.style.right = "0";
+       }
+       function hideMenu(){
+         navlinks.style.right = "-200px";
+       }
+       </script>
+  </body>
+</html>
